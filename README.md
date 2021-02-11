@@ -1,10 +1,10 @@
-# Pre-work - *Name of App Here*
+# Pre-work - *Shreyas' Tip Calculator*
 
-**Name of your app** is a tip calculator application for iOS.
+**Shreyas' Tip Calculator** is a tip calculator application for iOS.
 
-Submitted by: **Your Name Here**
+Submitted by: **Shreyas Raman**
 
-Time spent: **X** hours spent in total
+Time spent: **2** hours spent in total
 
 ## User Stories
 
@@ -34,11 +34,11 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Making the gif was ironically the tough part.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2021] [Shreyas Raman]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
