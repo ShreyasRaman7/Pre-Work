@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fEv-Xx-JOV">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="P7j-xk-d9S">
+            <objects>
+                <navigationController title="Navigation Controller" id="fEv-Xx-JOV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7eO-sH-mLf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bdY-Pp-C3d" kind="relationship" relationship="rootViewController" id="79q-fm-Uqn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sg0-eA-qFu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1354" y="33"/>
+        </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="R6D-pO-RtT">
+            <objects>
+                <viewController title="Initial View Controller" id="bdY-Pp-C3d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nc7-tx-17t" customClass="HomeUIView" customModule="SBU_HeatMap_test" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCi-1c-lAx">
+                                <rect key="frame" x="296" y="138" width="98" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UXd-rV-GS6"/>
+                                    <constraint firstAttribute="width" constant="98" id="a6Q-Ak-4lR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Menu">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="kly-D3-EMq" kind="show" id="Ge5-tH-liE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G0j-3a-cta"/>
+                        <color key="backgroundColor" red="0.75221170879999999" green="0.91936022920000005" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="LCi-1c-lAx" firstAttribute="top" secondItem="G0j-3a-cta" secondAttribute="top" constant="50" id="635-sG-EFz"/>
+                            <constraint firstItem="G0j-3a-cta" firstAttribute="trailing" secondItem="LCi-1c-lAx" secondAttribute="trailing" constant="20" id="UYc-1i-zUr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3yy-4z-bnc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4JS-KD-lCr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-568.1159420289855" y="32.8125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9db-FH-qXB">
+            <objects>
+                <viewController id="kly-D3-EMq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2uO-Y8-PCh" customClass="SideMenuUIView" customModule="SBU_HeatMap_test" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZTU-on-VoL">
+                                <rect key="frame" x="37" y="175" width="340" height="546"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AT7-md-QFA">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="141"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="340" id="0Go-JC-koR"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="P2I-Vi-PwS"/>
+                                            <constraint firstAttribute="height" constant="141" id="RRi-bb-6SQ"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="141" id="YDb-sI-vkE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Find a Lobby">
+                                                    <attributes>
+                                                        <font key="NSFont" size="54" name="GillSans-SemiBold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsl-Ib-oBs">
+                                        <rect key="frame" x="0.0" y="149" width="340" height="194"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="194" id="MMH-Ts-JSR"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="194" id="qoD-q9-qH4"/>
+                                            <constraint firstAttribute="width" constant="340" id="rRx-gR-JwD"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="sMx-qy-dPM"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="HeatMap">
+                                                    <attributes>
+                                                        <font key="NSFont" size="72" name="GillSans-SemiBoldItalic"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJm-0Q-0vm">
+                                        <rect key="frame" x="0.0" y="351" width="340" height="195"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="340" id="3iX-hq-ehp"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="Lxh-Fb-CKC"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="195" id="vyo-V1-4l9"/>
+                                            <constraint firstAttribute="height" constant="195" id="xLW-Fj-V32"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Settings">
+                                                    <attributes>
+                                                        <font key="NSFont" size="64" name="GillSans-SemiBold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Wx2-GB-Oa6" kind="show" id="JFG-ET-ALM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="AT7-md-QFA" secondAttribute="trailing" id="Cyj-s8-mGE"/>
+                                    <constraint firstItem="AT7-md-QFA" firstAttribute="leading" secondItem="ZTU-on-VoL" secondAttribute="leading" id="HMQ-ap-Chb"/>
+                                    <constraint firstAttribute="trailing" secondItem="tJm-0Q-0vm" secondAttribute="trailing" id="WBP-EQ-KSL"/>
+                                    <constraint firstItem="tJm-0Q-0vm" firstAttribute="leading" secondItem="ZTU-on-VoL" secondAttribute="leading" id="WTh-xb-SJ3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qsl-Ib-oBs" secondAttribute="trailing" id="YBa-ld-G6X"/>
+                                    <constraint firstAttribute="bottom" secondItem="tJm-0Q-0vm" secondAttribute="bottom" id="b0y-UT-JlZ"/>
+                                    <constraint firstItem="Qsl-Ib-oBs" firstAttribute="leading" secondItem="ZTU-on-VoL" secondAttribute="leading" id="qFf-EA-vEn"/>
+                                    <constraint firstItem="AT7-md-QFA" firstAttribute="top" secondItem="ZTU-on-VoL" secondAttribute="top" id="xEb-B6-ogd"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e2z-Et-tVE"/>
+                        <color key="backgroundColor" red="0.78384809190000004" green="0.94693370700000001" blue="0.89231048719999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ZTU-on-VoL" firstAttribute="centerX" secondItem="2uO-Y8-PCh" secondAttribute="centerX" id="1Lb-qQ-abk"/>
+                            <constraint firstItem="ZTU-on-VoL" firstAttribute="centerY" secondItem="2uO-Y8-PCh" secondAttribute="centerY" id="Kb8-TR-ZQb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="X5P-ee-rO6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rwg-bi-lgo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ZFL-Nu-gKL">
+                    <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                </button>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="32.8125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L9U-jn-WUc">
+            <objects>
+                <viewController id="Wx2-GB-Oa6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m6e-Yy-xN0" customClass="UserSettingsUIView" customModule="SBU_HeatMap_test" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Will add user settings here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcZ-J4-bQm">
+                                <rect key="frame" x="102" y="207" width="318" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uz5-aw-pMC"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DRF-hO-Ki0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rn7-cI-Bxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="33"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
