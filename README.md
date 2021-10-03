@@ -1,24 +1,22 @@
-# Pre-work - *Shreyas' Tip Calculator*
+# SBU HeatMap-VIP*
 
-**Shreyas' Tip Calculator** is a tip calculator application for iOS.
+**SBU HeatMap-VIP** is a group meeting coordinator for iOS.
 
-Submitted by: **Shreyas Raman**
+Made by: **Shreyas Raman and Leila Pan**
 
-Time spent: **2** hours spent in total
+Time spent: **to be updated ** hours spent in total
 
-## User Stories
+## Features and Functionality
 
 The following **required** functionality is complete:
 
-* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [ ] User can select between tip percentages by tapping different values on the segmented control and the tip value is updated accordingly
+* [ ] User can see available games
+* [ ] User can set difficulty level they want
+* [ ] User can see open game lobbies
 
 The following **optional** features are implemented:
 
 * [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
@@ -34,7 +32,6 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Making the gif was ironically the tough part.
 
 ## License
 
